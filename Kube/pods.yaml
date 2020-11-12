@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "web-app"
+  labels:
+    app: "nginx"
+    environment: "DEV"
+    region: "us-west-2"
+    OS: "Linux"
+    type: "front-end"
+spec:
+  containers:
+    - name: web-app-cont
+      image: nginx

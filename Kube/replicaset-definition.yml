@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: myapp-rs
+  labels:
+    app: adService
+    type: front-end
+    environment: itg
+    region: us-west-2
+spec:
+  template:
+    metadata:
+    spec:
+  replicas: 6
+selectors:
+  matchlabels:
+    type: front-end
