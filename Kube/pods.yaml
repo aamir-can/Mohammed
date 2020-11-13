@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: "web-app"
+  name: controltower
   labels:
-    app: "nginx"
-    environment: "DEV"
-    region: "us-west-2"
-    OS: "Linux"
-    type: "front-end"
+    app: controltower
+    region: us-west-2
+    env: pro
+    category: normal
+    role: web
 spec:
   containers:
-    - name: web-app-cont
+    - name: controltower
       image: nginx
