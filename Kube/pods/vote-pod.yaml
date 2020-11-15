@@ -1,10 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: vote-pod
+  name: voting-app-pod
   labels:
     app: voting-app
     type: front-end
+    category: web
+    env: pro
 spec:
   containers:
     - name: voting-app-container
