@@ -3,9 +3,9 @@ kind: Pod
 metadata:
   name: vote-pod
   labels:
-    app: vote
-    env: dev
+    app: voting-app
+    type: front-end
 spec:
   containers:
-    - name: vote-pod
+    - name: voting-app-container
       image: nginx
