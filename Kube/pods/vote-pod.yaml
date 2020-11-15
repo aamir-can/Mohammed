@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: vote-pod
+  labels:
+    app: vote
+    env: dev
+spec:
+  containers:
+    - name: vote-pod
+      image: nginx
