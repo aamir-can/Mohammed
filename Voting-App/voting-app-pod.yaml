@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: adservice-pod
+  name: adservice-vote
   labels:
     app: adservice
     env: pro
 spec:
   containers:
     - name: adservice
-      image: kodekloud/examplevotingapp_result:v1
+      image: kodekloud/examplevotingapp_vote:v1
       ports:
         - containerPort: 80
