@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: result-svc
   labels:
-    app: result-svc
+    app: adservice
     env: pro
 spec:
   type: NodePort

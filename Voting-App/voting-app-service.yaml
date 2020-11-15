@@ -1,9 +1,10 @@
+# api version :happy
 apiVersion: v1
 kind: Service
 metadata:
   name: adservice-svc
   labels:
-    app: adservice-svc
+    app: adservice
     env: pro
 spec:
   type: NodePort
