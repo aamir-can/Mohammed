@@ -1,7 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: vote
   name: vote-deployment
   labels:
     app: voting-app
@@ -17,6 +16,7 @@ spec:
       labels:
         app: voting-app
         env: pro
+        category: web
     spec:
       containers:
         - name: vote-container
