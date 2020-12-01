@@ -11,3 +11,7 @@
       service:
         name: httpd
         state: present
+    - name: "test the service"
+      service:
+        name: bits
+        state: running
