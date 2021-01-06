@@ -1,11 +1,15 @@
 ﻿apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx-meta
+  name: adservice
   labels:
     app: nginx-app
     tier: frontend
+    environment: dev
+    Service: AdService
 spec:
   containers:
-    - name: nginx-cont
+    - name: adservice-dev-container
       image: nginx
+    - name: adservice-busybox-container
+      image: busybox
