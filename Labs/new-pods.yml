@@ -1,6 +1,6 @@
 ﻿apiVersion: v1
 kind: Pod
-metdata:
+metadata:
   name: nginx-meta
   labels:
     app: nginx-app
