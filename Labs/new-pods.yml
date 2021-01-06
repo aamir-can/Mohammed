@@ -9,7 +9,11 @@ metadata:
     Service: AdService
 spec:
   containers:
-    - name: adservice-dev-container
+    - name: webservice
       image: nginx
-    - name: adservice-busybox-container
-      image: busybox
+    - name: redis
+      image: redis
+    - name: mongodb
+      image: mongo
+    - name: nodejs
+      image: node
