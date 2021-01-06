@@ -9,5 +9,3 @@ spec:
   containers:
     - name: nginx-cont
       image: nginx
-    - name: busybox-cont
-      image: busybox
