@@ -1,0 +1,13 @@
+﻿apiVersion: v1
+kind: Pod
+metdata:
+  name: nginx-meta
+  labels:
+    app: nginx-app
+    tier: frontend
+spec:
+  containers:
+    - name: nginx-cont
+      image: nginx
+    - name: busybox-cont
+      image: busybox
