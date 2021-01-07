@@ -1,0 +1,6 @@
+appVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: 
+
+spec:
