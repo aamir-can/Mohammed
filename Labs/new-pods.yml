@@ -13,7 +13,7 @@ spec:
       image: nginx
     - name: redis
       image: redis
-    - name: mongodb
-      image: mongo
+    - name: python
+      image: python
     - name: nodejs
       image: node
