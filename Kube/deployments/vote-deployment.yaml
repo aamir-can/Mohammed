@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: voting-app-deploy
+  name: httpd-frontend
   labels:
     app: voting-app
     type: front-end
@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: voting-app-container
-          image: nginx
+          image: httpd:2.4-alpine
   replicas: 3
   selector:
     matchLabels:
