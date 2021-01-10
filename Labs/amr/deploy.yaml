@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: adservice-nginx-deployment
+  labels:
+    environment: dev
+    app: adservice
+spec:
+  selector:
+    matchLabels:
+      environment: dev
+      app: adservice
+  replicas: 4
+  template:
+    metadata:
+      name: adservice-nginx-pod
+      labels:
+        environment: dev
+        app: adservice
+    spec:
+      containers:
+        - name: adservice-dev-container
+          image: nginx
