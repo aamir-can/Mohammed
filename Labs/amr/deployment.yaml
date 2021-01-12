@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: adservice-nginx-deployment
+  namespace: dev
   labels:
     environment: dev
     app: adservice
@@ -14,6 +15,7 @@ spec:
   template:
     metadata:
       name: adservice-nginx-pod
+      namespace: dev
       labels:
         environment: dev
         app: adservice

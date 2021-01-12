@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: adservice-nginx-pod
+  namespace: dev
   labels:
     environment: dev
     app: adservice
@@ -9,3 +10,4 @@ spec:
   containers:
     - name: adservice-dev-container
       image: nginx
+  nodeName: minikube-m02
