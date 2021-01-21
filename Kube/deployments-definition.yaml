@@ -1,23 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  name: aamer-deployment
   labels:
-    app: vote
-  name: vote
-  namespace: vote
+    app: adservice
 spec:
-  replicas: 1
+  replicas: 5
   selector:
     matchLabels:
-      app: vote
+      app: adservice
   template:
     metadata:
       labels:
-        app: vote
+        app: adservice
     spec:
       containers:
-        - image: dockersamples/examplevotingapp_vote:before
-          name: vote
+        - name: nginx
+          image: nginx
           ports:
             - containerPort: 80
-              name: vote
