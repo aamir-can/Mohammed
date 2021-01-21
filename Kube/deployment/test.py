@@ -1,9 +1,10 @@
-import os
-import sys
-firstname = input('Please provide your firstname: ')
-lastname = input('Please provide your lastname: ')
-
-if firstname == 'Aamer':
-    print('Hey.. I know you.')
-else:
-    print('Hello', firstname)
+secret_number = 5
+count = 0
+limit = 9
+while count <= limit:
+    guess = int(input('Guess: '))
+    if guess == secret_number:
+        print("You got it.")
+        break
+    else:
+        print("No..")
