@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: adservice
+  name: adservice-dev
   namespace: dev
   labels:
     app: adservice
@@ -13,21 +13,15 @@ spec:
       app: adservice
   template:
     metadata:
+      namespace: dev
       labels:
         app: adservice
     spec:
       containers:
-        - name: adservice-pod
+        - name: adservice-cont
           image: nginx
           ports:
             - containerPort: 80
-          resources:
-            requests:
-              memory: ""
-              cpu: ""
-            limits:
-              memory: ""
-              cpu: ""
 
 ---
 apiVersion: v1
